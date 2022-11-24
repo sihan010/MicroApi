@@ -1,0 +1,44 @@
+MicroLog->23 Oct 2022 19:51:46,594 -> INFO -> MainKt -> [main] : AppConfig(log=MicroLogConfig(debug=true, async=true, appenders=[CONSOLE, ROLLING_FILE], patternConsole=%highlight{%d{DATE} -> %p -> %c{1.} -> [%t] : %msg%n%throwable}, patternRollingFile=%d{DATE} -> %p -> %c{1.} -> [%t] : %msg%n%throwable, rollingFileName=log/micro_api.log, rollingFileBufferSize=ConfigMemorySize(1024), rollingFileTriggerPolicy=ConfigMemorySize(1048576)), api=ApiConfig(port=8080, metricsPort=9001, healthCheckDuration=PT1M, maxPayloadSize=ConfigMemorySize(2097152), servers=[https://abc.com:80/, https://def.com:80/, https://ghi.com:80/]))
+23 Oct 2022 20:14:02,369 -> INFO -> MainKt -> [main] : hello
+23 Oct 2022 20:15:17,762 -> INFO -> MainKt -> [main] : hello
+23 Oct 2022 20:15:34,004 -> INFO -> MainKt -> [main] : hello
+23 Oct 2022 20:22:37,163 -> INFO -> MainKt -> [main] : hello
+23 Oct 2022 20:34:21,255 -> INFO -> MainKt -> [main] : hello
+23 Oct 2022 20:35:17,954 -> INFO -> MainKt -> [main] : hello
+23 Oct 2022 20:35:33,494 -> INFO -> MainKt -> [main] : hello
+23 Oct 2022 20:36:04,075 -> INFO -> MainKt -> [main] : hello
+23 Oct 2022 20:36:10,943 -> INFO -> MainKt -> [main] : hello
+23 Oct 2022 20:36:19,145 -> INFO -> MainKt -> [main] : hello
+23 Oct 2022 20:36:48,589 -> INFO -> MainKt -> [main] : hello
+[(Yolo, oo)]
+23 Oct 2022 20:39:26,505 -> INFO -> MainKt -> [main] : hello --> Parameters: [(Yolo, oo)]
+23 Oct 2022 20:39:59,526 -> INFO -> MainKt -> [main] -> Message: hello --> Parameters: [(Yolo, oo)]
+23 Oct 2022 20:44:21,787 -> INFO -> MainKt -> [main] -> Message: hello --> parameters --> [(Yolo, oo)]
+23 Oct 2022 20:45:56,984 -> INFO -> MainKt -> [main] -> Message: hello --> 
+23 Oct 2022 20:46:34,463 -> INFO -> MainKt -> [main] -> Message: hello 
+23 Oct 2022 20:46:42,622 -> INFO -> MainKt -> [main] -> Message: hello --> Parameters --> [(Yolo, oo)]
+23 Oct 2022 20:47:36,969 -> INFO -> MainKt -> [main] -> Message: hello --> Parameters --> [(Yolo, oo)]
+23 Oct 2022 20:47:36,969 -> ERROR -> MainKt -> [main] -> Message: Oooppss --> Parameters --> [(Yolo, oo)]
+microcollection.exceptions.MicroGenericException: Any Message
+	at MainKt.main(Main.kt:11)
+	at MainKt.main(Main.kt)
+abc --> [32m23 Oct 2022 20:58:29,785 -> INFO -> MainKt -> [main] -> Message: hello --> Parameters --> [(Yolo, oo)]
+[mabc --> [1;31m23 Oct 2022 20:58:29,785 -> ERROR -> MainKt -> [main] -> Message: Oooppss --> Parameters --> [(Yolo, oo)]
+microcollection.exceptions.MicroGenericException: Any Message
+	at MainKt.main(Main.kt:11)
+	at MainKt.main(Main.kt)
+[mabc -> [32m23 Oct 2022 20:59:13,449 -> INFO -> MainKt -> [main] -> Message: hello --> Parameters --> [(Yolo, oo)]
+[mabc -> [1;31m23 Oct 2022 20:59:13,449 -> ERROR -> MainKt -> [main] -> Message: Oooppss --> Parameters --> [(Yolo, oo)]
+microcollection.exceptions.MicroGenericException: Any Message
+	at MainKt.main(Main.kt:11)
+	at MainKt.main(Main.kt)
+[mabc -> [32m23 Oct 2022 20:59:33,407 -> INFO -> MainKt -> [main] -> Message: hello -> Parameters -> [(Yolo, oo)]
+[mabc -> [1;31m23 Oct 2022 20:59:33,407 -> ERROR -> MainKt -> [main] -> Message: Oooppss -> Parameters -> [(Yolo, oo)]
+microcollection.exceptions.MicroGenericException: Any Message
+	at MainKt.main(Main.kt:11)
+	at MainKt.main(Main.kt)
+[m23 Oct 2022 21:00:10,514 -> INFO -> MainKt -> [main] -> Message: hello -> Parameters -> [(Yolo, oo)]
+23 Oct 2022 21:00:10,515 -> ERROR -> MainKt -> [main] -> Message: Oooppss -> Parameters -> [(Yolo, oo)]
+microcollection.exceptions.MicroGenericException: Any Message
+	at MainKt.main(Main.kt:11)
+	at MainKt.main(Main.kt)
